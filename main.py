@@ -1,12 +1,12 @@
-def imc(estatura, peso):
-    return peso/ estatura**2
+from numbers import Integral
 
-peso = float(input('Escriba su peso (kg):'))
-estatura = float(input('Escriba su estatura (M):'))
 
-indice = imc(estatura,peso)
+edad = int(input('Ponga aquí su Edad:'))
 
-print('Su Indice de masa corporal es: {}'.format(indice))
+if edad >= 18:
+      print('Es mayor de Edad')
+else:
+       print('Es menor de Edad')  
 
 
 
