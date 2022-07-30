@@ -1,44 +1,29 @@
-import math 
+num = int(input('Ingrese un número:'))  
 
-base = None 
-altura = None
-radio = None
-
-while True:
-    try:
-        base = float(input('Escribir base del triangulo:'))
-        break
-    except:
-        print('Escriba un número')
+if num > 1:
+    
+    cont = 0
+    
+    for i in range (2,num):
+        resto = num % i
         
-
-
-while True:
-    try:
-        altura = float(input('Escribir altura del triangulo:'))
-        break
-    except:
-        print('Escriba un número')  
+        if resto == 0:
+            cont += 1
+            
+    if cont ==0:
+        print('El{} es un número primo'. format(num))
         
+    else :
+        print('El {} no es un número primo'. format(num))  
         
-area = base * altura /2
-
-print('El area del triángulo es:{}'.format(area))              
-
-while True:
-    try:
-        radio = float(input('Escribir radio del circulo:'))
-        break
-    except:
-        print('Escriba un número')
-
+else:
+    print('El {} no es un número primo'.format(num))                  
+  
+  
 
         
-
-area = math.pi*(radio*radio)        
-
-
-print('El area del circulo es:{}'.format(area))            
+        
+     
 
 
 
