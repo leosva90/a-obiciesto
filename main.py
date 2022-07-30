@@ -1,23 +1,10 @@
-num = int(input('Ingrese un número:'))  
+año = int(input('Ingrese un año:'))  
 
-if num > 1:
+if (año %4 == 0 and año % 100 != 0)  or año % 400 ==  0:
+    print('El año',año,'es biciesto')     
     
-    cont = 0
-    
-    for i in range (2,num):
-        resto = num % i
-        
-        if resto == 0:
-            cont += 1
-            
-    if cont ==0:
-        print('El{} es un número primo'. format(num))
-        
-    else :
-        print('El {} no es un número primo'. format(num))  
-        
 else:
-    print('El {} no es un número primo'.format(num))                  
+    print('El año',año,'no es biciesto')                     
   
   
 
